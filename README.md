@@ -17,7 +17,6 @@ buildToolsVersion "30.0.3"
 minSdkVersion 23
 
 targetSdkVersion 33
-```diff
 ### Libraries
 
 1. Retrofit- REST API Call
