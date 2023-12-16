@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+    <data>
+        <variable name="listProjectVM" type="com.alicanadasapplication.app.modules.listproject.data.viewmodel.ListProjectVM"/>
+    </data>
+    <LinearLayout
+        style="@style/groupStyleblue_400_38"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            tools:context = ".modules.listengineer.ui.ListEngineerActivity"
+            >
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/listProjectRecyclerView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <TextView android:ellipsize="end"
+            android:id="@+id/txtFrameSeventyNine"
+            android:layout_gravity="start"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/_20pxv"
+            android:layout_marginEnd="@dimen/_18pxh"
+            android:layout_marginStart="@dimen/_18pxh"
+            android:layout_marginTop="@dimen/_91pxv"
+            android:layout_width="wrap_content"
+            android:paddingBottom="@dimen/_4pxv"
+            android:paddingEnd="@dimen/_30pxh"
+            android:paddingStart="@dimen/_30pxh"
+            android:paddingTop="@dimen/_1pxv" android:singleLine="true"
+            style="@style/txtSolidOutline" tools:text="@string/lbl"/>
+    </LinearLayout>
+
+</layout>

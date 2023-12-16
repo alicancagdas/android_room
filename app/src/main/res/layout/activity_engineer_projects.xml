@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:tools="http://schemas.android.com/tools">
+    <data>
+        <variable name="engineerProjectsVM" type="com.alicanadasapplication.app.modules.engineerprojects.data.viewmodel.EngineerProjectsVM"/>
+    </data>
+    <LinearLayout android:gravity="start"
+        android:id="@+id/linearEngineerprojec"
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        android:orientation="vertical" style="@style/groupStyleblue_400_38">
+        <LinearLayout android:gravity="center_horizontal"
+            android:id="@+id/linearColumnenginnerxproj"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/_10pxh"
+            android:layout_marginStart="@dimen/_10pxh"
+            android:layout_marginTop="@dimen/_10pxv"
+            android:layout_width="match_parent"
+            android:orientation="vertical" style="@style/groupStylewhite_A700">
+            <TextView android:gravity="start"
+                android:id="@+id/txtENGINNERXPROJ"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="@dimen/_7pxv"
+                android:layout_marginEnd="@dimen/_75pxh"
+                android:layout_marginStart="@dimen/_75pxh"
+                android:layout_marginTop="@dimen/_5pxv"
+                android:layout_width="match_parent"
+                android:text="@{engineerProjectsVM.engineerProjectsModel.txtENGINNERXPROJ}"
+                style="@style/txtAleoregular16" tools:text="@string/msg_enginner_x_proj"/>
+        </LinearLayout>
+        <LinearLayout android:gravity="start"
+            android:id="@+id/linearColumncreatefromfra"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/_10pxh"
+            android:layout_marginStart="@dimen/_10pxh"
+            android:layout_marginTop="@dimen/_10pxv"
+            android:layout_width="match_parent"
+            android:orientation="vertical" style="@style/groupStylegreen_400_23">
+            <FrameLayout android:id="@+id/frameStackcreatefromfra"
+                android:layout_height="@dimen/_20pxv"
+                android:layout_marginEnd="@dimen/_45pxh"
+                android:layout_marginStart="@dimen/_45pxh"
+                android:layout_marginTop="@dimen/_17pxv"
+                android:layout_width="@dimen/_43pxh" style="@style/groupStyle">
+                <View
+                    android:background="@drawable/rectangle_border_black_900"
+                    android:id="@+id/viewCreatefromfra"
+                    android:layout_gravity="bottom|start"
+                    android:layout_height="@dimen/_18pxv"
+                    android:layout_marginTop="@dimen/_10pxv" android:layout_width="@dimen/_43pxh"/>
+                <TextView android:ellipsize="end"
+                    android:gravity="top|start"
+                    android:id="@+id/txtPrice"
+                    android:layout_gravity="start"
+                    android:layout_height="wrap_content"
+                    android:layout_width="match_parent"
+                    android:singleLine="true"
+                    android:text="@{engineerProjectsVM.engineerProjectsModel.txtPrice}"
+                    style="@style/txtAleoregular16" tools:text="@string/lbl_title"/>
+            </FrameLayout>
+            <FrameLayout android:id="@+id/frameStackcreatefromfraOne"
+                android:layout_height="@dimen/_20pxv"
+                android:layout_marginEnd="@dimen/_45pxh"
+                android:layout_marginStart="@dimen/_45pxh"
+                android:layout_marginTop="@dimen/_21pxv"
+                android:layout_width="@dimen/_103pxh" style="@style/groupStyle">
+                <View
+                    android:background="@drawable/rectangle_border_black_900"
+                    android:id="@+id/viewCreatefromfraOne"
+                    android:layout_gravity="bottom|start"
+                    android:layout_height="@dimen/_18pxv"
+                    android:layout_marginTop="@dimen/_10pxv" android:layout_width="@dimen/_103pxh"/>
+                <TextView android:ellipsize="end"
+                    android:gravity="top|start"
+                    android:id="@+id/txtMANAGERID"
+                    android:layout_gravity="start"
+                    android:layout_height="wrap_content"
+                    android:layout_width="match_parent"
+                    android:singleLine="true"
+                    android:text="@{engineerProjectsVM.engineerProjectsModel.txtMANAGERID}"
+                    style="@style/txtAleoregular16" tools:text="@string/lbl_manager_id2"/>
+            </FrameLayout>
+            <FrameLayout android:id="@+id/frameStackcreatefromfraTwo"
+                android:layout_height="@dimen/_20pxv"
+                android:layout_marginBottom="@dimen/_80pxv"
+                android:layout_marginEnd="@dimen/_45pxh"
+                android:layout_marginStart="@dimen/_45pxh"
+                android:layout_marginTop="@dimen/_20pxv"
+                android:layout_width="@dimen/_77pxh" style="@style/groupStyle">
+                <View
+                    android:background="@drawable/rectangle_border_black_900"
+                    android:id="@+id/viewCreatefromfraTwo"
+                    android:layout_gravity="bottom|start"
+                    android:layout_height="@dimen/_18pxv"
+                    android:layout_marginTop="@dimen/_10pxv" android:layout_width="@dimen/_77pxh"/>
+                <TextView android:ellipsize="end"
+                    android:gravity="top|start"
+                    android:id="@+id/txtCONTENT"
+                    android:layout_gravity="start"
+                    android:layout_height="wrap_content"
+                    android:layout_width="match_parent"
+                    android:singleLine="true"
+                    android:text="@{engineerProjectsVM.engineerProjectsModel.txtCONTENT}"
+                    style="@style/txtAleoregular16" tools:text="@string/lbl_content"/>
+            </FrameLayout>
+        </LinearLayout>
+        <TextView android:ellipsize="end"
+            android:id="@+id/txtFrameEighty"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/_20pxv"
+            android:layout_marginEnd="@dimen/_10pxh"
+            android:layout_marginStart="@dimen/_10pxh"
+            android:layout_marginTop="@dimen/_10pxv"
+            android:layout_width="wrap_content"
+            android:paddingBottom="@dimen/_4pxv"
+            android:paddingEnd="@dimen/_30pxh"
+            android:paddingStart="@dimen/_30pxh"
+            android:paddingTop="@dimen/_1pxv" android:singleLine="true"
+            android:text="@{engineerProjectsVM.engineerProjectsModel.txtFrameEighty}"
+            style="@style/txtSolidOutline" tools:text="@string/lbl"/>
+    </LinearLayout>
+</layout>

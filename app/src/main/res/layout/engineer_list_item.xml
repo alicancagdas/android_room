@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+        <variable
+            name="engineer"
+            type="com.alicanadasapplication.app.database.entities.Muhendisler" />
+    </data>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardCounter"
+        app:cardCornerRadius="@dimen/_35sp"
+        android:layout_width="wrap_content"
+        android:layout_margin="10dp"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="16dp"
+            android:background="@drawable/rectangle_bg_green_400_23_border_black_900">
+
+
+            <TextView
+                android:background="@color/green_400_23"
+                android:id="@+id/txtEngineerID"
+                style="@style/txtOutline_1"
+                android:layout_width="317dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_25pxh"
+                android:layout_marginTop="@dimen/_24pxv"
+                android:layout_marginEnd="@dimen/_25pxh"
+                android:ellipsize="end"
+                android:singleLine="true"
+                android:text="@{String.valueOf(engineer.engineerId)}"
+                tools:text="@string/lbl_engineerid" />
+            <TextView
+                android:ellipsize="end"
+                android:id="@+id/txtNames"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/_25pxh"
+                android:layout_marginStart="@dimen/_25pxh"
+                android:layout_marginTop="@dimen/_24pxv"
+                android:layout_width="match_parent"
+                android:singleLine="true"
+                android:text="@{engineer.name}"
+                style="@style/txtOutline_1"
+                tools:text="@string/lbl_name2" />
+
+            <TextView
+                android:background="@color/green_400_23"
+                android:ellipsize="end"
+                android:id="@+id/txtSurname"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/_25pxh"
+                android:layout_marginStart="@dimen/_25pxh"
+                android:layout_marginTop="@dimen/_21pxv"
+                android:layout_width="match_parent"
+                android:singleLine="true"
+                android:text="@{engineer.surname}"
+                style="@style/txtOutline_1"
+                tools:text="@string/lbl_surname2" />
+
+            <TextView
+                android:ellipsize="end"
+                android:id="@+id/txtPhone"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/_25pxh"
+                android:layout_marginStart="@dimen/_25pxh"
+                android:layout_marginTop="@dimen/_24pxv"
+                android:layout_width="match_parent"
+                android:singleLine="true"
+                android:text="@{engineer.phone}"
+                style="@style/txtOutline_1"
+                tools:text="@string/lbl_phone2" />
+
+            <TextView
+                android:background="@color/green_400_23"
+                android:ellipsize="end"
+                android:id="@+id/txtNop"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/_25pxh"
+                android:layout_marginStart="@dimen/_25pxh"
+                android:layout_marginTop="@dimen/_19pxv"
+                android:layout_width="match_parent"
+                android:singleLine="true"
+                style="@style/txtOutline_1"
+                android:text="@{String.valueOf(engineer.numberOfProjects)}"
+                tools:text="@string/msg_number_of_proje" />
+
+
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+</layout>
+

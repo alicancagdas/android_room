@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:tools="http://schemas.android.com/tools">
+    <data>
+        <variable name="engineerVM" type="com.alicanadasapplication.app.modules.engineer.data.viewmodel.EngineerVM"/>
+    </data>
+    <LinearLayout android:id="@+id/linearEngineer"
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        android:orientation="vertical" style="@style/groupStyleblue_400_38">
+        <ImageView android:id="@+id/imageKouOne"
+            android:layout_gravity="end"
+            android:layout_height="@dimen/_81pxh"
+            android:layout_marginEnd="@dimen/_30pxh"
+            android:layout_marginStart="@dimen/_30pxh"
+            android:layout_marginTop="@dimen/_7pxv"
+            android:layout_width="@dimen/_81pxh"
+            android:scaleType="fitXY" cornerRadius="@{@dimen/_25pxh}"
+            imageRes="@{@drawable/img_kou1}"
+            tools:ignore="ContentDescription" tools:src="@drawable/img_kou1"/>
+        <androidx.appcompat.widget.AppCompatButton
+            android:ellipsize="end" android:gravity="center"
+            android:id="@+id/btnAddNewEngineerOne"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/_18pxh"
+            android:layout_marginStart="@dimen/_18pxh"
+            android:layout_marginTop="@dimen/_16pxv"
+            android:layout_width="match_parent"
+            android:paddingBottom="@dimen/_21pxv"
+            android:paddingEnd="@dimen/_30pxh"
+            android:paddingStart="@dimen/_30pxh"
+            android:paddingTop="@dimen/_21pxv" android:singleLine="true"
+            android:text="@string/msg_add_new_enginee"
+            android:textAllCaps="false" style="@style/btnSolidOutline" tools:text="@string/msg_add_new_enginee"/>
+        <androidx.appcompat.widget.AppCompatButton
+            android:ellipsize="end" android:gravity="center"
+            android:id="@+id/btnListEngineer"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/_18pxh"
+            android:layout_marginStart="@dimen/_18pxh"
+            android:layout_marginTop="@dimen/_86pxv"
+            android:layout_width="match_parent"
+            android:paddingBottom="@dimen/_21pxv"
+            android:paddingEnd="@dimen/_30pxh"
+            android:paddingStart="@dimen/_30pxh"
+            android:paddingTop="@dimen/_21pxv" android:singleLine="true"
+            android:text="@string/lbl_list_engineer"
+            android:textAllCaps="false" style="@style/btnSolidOutline" tools:text="@string/lbl_list_engineer"/>
+        <androidx.appcompat.widget.AppCompatButton
+            android:ellipsize="end" android:gravity="center"
+            android:id="@+id/btnListCountThree"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/_18pxh"
+            android:layout_marginStart="@dimen/_18pxh"
+            android:layout_marginTop="@dimen/_84pxv"
+            android:layout_width="match_parent"
+            android:paddingBottom="@dimen/_18pxv"
+            android:paddingEnd="@dimen/_30pxh"
+            android:paddingStart="@dimen/_30pxh"
+            android:paddingTop="@dimen/_18pxv" android:singleLine="true"
+            android:text="@string/lbl_list_count_3"
+            android:textAllCaps="false" style="@style/btnSolidOutline" tools:text="@string/lbl_list_count_3"/>
+        <TextView android:ellipsize="end"
+            android:id="@+id/txtFrameSeventyNine"
+            android:layout_gravity="start"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/_20pxv"
+            android:layout_marginEnd="@dimen/_18pxh"
+            android:layout_marginStart="@dimen/_18pxh"
+            android:layout_marginTop="@dimen/_91pxv"
+            android:layout_width="wrap_content"
+            android:paddingBottom="@dimen/_4pxv"
+            android:paddingEnd="@dimen/_30pxh"
+            android:paddingStart="@dimen/_30pxh"
+            android:paddingTop="@dimen/_1pxv" android:singleLine="true"
+            android:text="@{engineerVM.engineerModel.txtFrameSeventyNine}"
+            style="@style/txtSolidOutline" tools:text="@string/lbl"/>
+    </LinearLayout>
+</layout>

@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:tools="http://schemas.android.com/tools">
+    <data>
+        <variable name="mainVM" type="com.alicanadasapplication.app.modules.main.data.viewmodel.MainVM"/>
+    </data>
+    <LinearLayout android:id="@+id/linearMain"
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        android:orientation="vertical" style="@style/groupStyleblue_400_38">
+        <ImageView android:id="@+id/imageKouOne"
+            android:layout_gravity="end"
+            android:layout_height="@dimen/_130pxh"
+            android:layout_marginEnd="@dimen/_37pxh"
+            android:layout_marginStart="@dimen/_37pxh"
+            android:layout_marginTop="@dimen/_32pxv"
+            android:layout_width="@dimen/_121pxh"
+            android:scaleType="fitXY" cornerRadius="@{@dimen/_25pxh}"
+            imageRes="@{@drawable/img_kou1}"
+            tools:ignore="ContentDescription" tools:src="@drawable/img_kou1"/>
+        <androidx.appcompat.widget.AppCompatButton
+            android:ellipsize="end" android:gravity="center"
+            android:id="@+id/btnProjects" android:layout_gravity="start"
+            android:layout_height="@dimen/_57pxv"
+            android:layout_marginEnd="@dimen/_19pxh"
+            android:layout_marginStart="@dimen/_19pxh"
+            android:layout_marginTop="@dimen/_49pxv"
+            android:layout_width="@dimen/_220pxh"
+            android:paddingBottom="@dimen/_18pxv"
+            android:paddingEnd="@dimen/_30pxh"
+            android:paddingStart="@dimen/_30pxh"
+            android:paddingTop="@dimen/_18pxv" android:singleLine="true"
+            android:text="@string/lbl_projects"
+            android:textAllCaps="false" style="@style/btnSolidOutline" tools:text="@string/lbl_projects"/>
+        <androidx.appcompat.widget.AppCompatButton
+            android:ellipsize="end" android:gravity="center"
+            android:id="@+id/btnEngineers"
+            android:layout_gravity="start"
+            android:layout_height="@dimen/_57pxv"
+            android:layout_marginBottom="@dimen/_20pxv"
+            android:layout_marginEnd="@dimen/_19pxh"
+            android:layout_marginStart="@dimen/_19pxh"
+            android:layout_marginTop="@dimen/_49pxv"
+            android:layout_width="@dimen/_220pxh"
+            android:paddingBottom="@dimen/_18pxv"
+            android:paddingEnd="@dimen/_30pxh"
+            android:paddingStart="@dimen/_30pxh"
+            android:paddingTop="@dimen/_18pxv" android:singleLine="true"
+            android:text="@string/lbl_engineers"
+            android:textAllCaps="false" style="@style/btnSolidOutline" tools:text="@string/lbl_engineers"/>
+    </LinearLayout>
+</layout>

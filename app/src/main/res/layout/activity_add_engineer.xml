@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:tools="http://schemas.android.com/tools">
+    <data>
+        <variable name="addEngineerVM" type="com.alicanadasapplication.app.modules.addengineer.data.viewmodel.AddEngineerVM"/>
+    </data>
+    <LinearLayout android:id="@+id/linearAddengineer"
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        android:orientation="vertical" style="@style/groupStyleblue_400_38">
+
+        <ImageView
+            android:id="@+id/imageKouTwo"
+            cornerRadius="@{@dimen/_80pxh}"
+            imageRes="@{@drawable/img_kou1}"
+            android:layout_width="@dimen/_77pxh"
+            android:layout_height="@dimen/_80pxh"
+            android:layout_gravity="end"
+            android:layout_marginStart="@dimen/_12pxh"
+            android:layout_marginTop="@dimen/_9pxv"
+            android:layout_marginEnd="@dimen/_12pxh"
+            android:scaleType="fitXY"
+            tools:ignore="ContentDescription"
+            tools:src="@drawable/img_kou1" />
+
+        <EditText
+            android:background="@drawable/rectangle_bg_green_400_23_border_black_901"
+            android:ellipsize="end" android:hint="@string/lbl_name"
+            android:id="@+id/etAddName" android:inputType="text"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/_18pxh"
+            android:layout_marginStart="@dimen/_18pxh"
+            android:layout_marginTop="@dimen/_25pxh"
+            android:layout_width="match_parent"
+            android:paddingBottom="@dimen/_13pxv"
+            android:paddingEnd="@dimen/_30pxh"
+            android:paddingStart="@dimen/_17pxh"
+            android:paddingTop="@dimen/_11pxv" android:singleLine="true"
+            android:text="@={addEngineerVM.addEngineerModel.etAddNameValue}"
+            android:textColorHint="@color/black_900"
+            style="@style/etSolidOutline_1" tools:ignore="Autofill"/>
+        <EditText
+            android:background="@drawable/rectangle_bg_green_400_23_border_black_901"
+            android:ellipsize="end" android:hint="@string/lbl_surname"
+            android:id="@+id/etAddSurname" android:inputType="text"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/_18pxh"
+            android:layout_marginStart="@dimen/_18pxh"
+            android:layout_marginTop="@dimen/_25pxh"
+            android:layout_width="match_parent"
+            android:paddingBottom="@dimen/_13pxv"
+            android:paddingEnd="@dimen/_30pxh"
+            android:paddingStart="@dimen/_17pxh"
+            android:paddingTop="@dimen/_11pxv" android:singleLine="true"
+            android:text="@={addEngineerVM.addEngineerModel.etAddSurnameValue}"
+            android:textColorHint="@color/black_900"
+            style="@style/etSolidOutline_1" tools:ignore="Autofill"/>
+        <EditText
+            android:background="@drawable/rectangle_bg_green_400_23_border_black_901"
+            android:ellipsize="end" android:hint="@string/lbl_phone"
+            android:id="@+id/etAddPhone" android:inputType="phone"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/_18pxh"
+            android:layout_marginStart="@dimen/_18pxh"
+            android:layout_marginTop="@dimen/_25pxh"
+            android:layout_width="match_parent"
+            android:paddingBottom="@dimen/_13pxv"
+            android:paddingEnd="@dimen/_30pxh"
+            android:paddingStart="@dimen/_17pxh"
+            android:paddingTop="@dimen/_11pxv" android:singleLine="true"
+            android:text="@={addEngineerVM.addEngineerModel.etAddPhoneValue}"
+            android:textColorHint="@color/black_900"
+            style="@style/etSolidOutline_1" tools:ignore="Autofill"/>
+        <EditText
+            android:background="@drawable/rectangle_bg_green_400_23_border_black_901"
+            android:ellipsize="end"
+            android:hint="@string/msg_numer_of_projec"
+            android:id="@+id/etAddNoa" android:inputType="text"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/_18pxh"
+            android:layout_marginStart="@dimen/_18pxh"
+            android:layout_marginTop="@dimen/_25pxh"
+            android:layout_width="match_parent"
+            android:paddingBottom="@dimen/_13pxv"
+            android:paddingEnd="@dimen/_30pxh"
+            android:paddingStart="@dimen/_17pxh"
+            android:paddingTop="@dimen/_11pxv" android:singleLine="true"
+            android:text="@={addEngineerVM.addEngineerModel.etAddNoaValue}"
+            android:textColorHint="@color/black_900"
+            style="@style/etSolidOutline_1" tools:ignore="Autofill"/>
+        <androidx.appcompat.widget.AppCompatButton
+            android:ellipsize="end" android:gravity="center"
+            android:id="@+id/btnAddEngineers"
+            android:layout_gravity="end"
+            android:layout_height="@dimen/_61pxv"
+            android:layout_marginEnd="@dimen/_24pxh"
+            android:layout_marginStart="@dimen/_24pxh"
+            android:layout_marginTop="@dimen/_25pxh"
+            android:layout_width="@dimen/_199pxh"
+            android:paddingBottom="@dimen/_20pxv"
+            android:paddingEnd="@dimen/_30pxh"
+            android:paddingStart="@dimen/_30pxh"
+            android:paddingTop="@dimen/_20pxv" android:singleLine="true"
+            android:text="@string/lbl_add_engineer"
+            android:textAllCaps="false" style="@style/btnSolidOutline" tools:text="@string/lbl_add_engineer"/>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:ellipsize="end" android:gravity="center"
+            android:id="@+id/btnEditEngineer"
+            android:layout_gravity="end"
+            android:layout_height="@dimen/_61pxv"
+            android:layout_marginEnd="@dimen/_24pxh"
+            android:layout_marginStart="@dimen/_24pxh"
+            android:layout_marginTop="@dimen/_10sp"
+            android:layout_width="@dimen/_199pxh"
+            android:paddingBottom="@dimen/_20pxv"
+            android:paddingEnd="@dimen/_30pxh"
+            android:paddingStart="@dimen/_30pxh"
+            android:paddingTop="@dimen/_20pxv" android:singleLine="true"
+            android:text="@string/lbl_edit_engineer"
+            android:textAllCaps="false" style="@style/btnSolidOutline" tools:text="@string/lbl_edit_engineer"/>
+
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:ellipsize="end" android:gravity="center"
+            android:id="@+id/btnDeleteEngineer"
+            android:layout_gravity="end"
+            android:layout_height="@dimen/_61pxv"
+            android:layout_marginEnd="@dimen/_24pxh"
+            android:layout_marginStart="@dimen/_24pxh"
+            android:layout_marginTop="@dimen/_1sp"
+            android:layout_width="@dimen/_199pxh"
+            android:paddingBottom="@dimen/_20pxv"
+            android:paddingEnd="@dimen/_30pxh"
+            android:paddingStart="@dimen/_30pxh"
+            android:paddingTop="@dimen/_20pxv" android:singleLine="true"
+            android:text="@string/lbl_delete_engineer"
+            android:textAllCaps="false" style="@style/btnSolidOutline" tools:text="@string/lbl_delete_engineer"/>
+        <TextView android:ellipsize="end"
+            android:id="@+id/txtFrameSeventyNine"
+            android:layout_gravity="start"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/_20pxv"
+            android:layout_marginEnd="@dimen/_18pxh"
+            android:layout_marginStart="@dimen/_18pxh"
+            android:layout_marginTop="@dimen/_55pxv"
+            android:layout_width="wrap_content"
+            android:paddingBottom="@dimen/_4pxv"
+            android:paddingEnd="@dimen/_30pxh"
+            android:paddingStart="@dimen/_30pxh"
+            android:paddingTop="@dimen/_1pxv" android:singleLine="true"
+            android:text="@{addEngineerVM.addEngineerModel.txtFrameSeventyNine}"
+            style="@style/txtSolidOutline" tools:text="@string/lbl"/>
+    </LinearLayout>
+</layout>

@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<resources>
+    <string name="app_name">alican_ada_s_application18</string>
+    <string name="loading">Loading…</string>
+    <string name="no_internet_connection">No internet connection!</string>
+    <string name="lbl_add_new_project">ADD NEW PROJECT</string>
+    <string name="lbl_add_engineer">ADD ENGINEER</string>
+    <string name="lbl_edit_engineer">EDIT ENGINEER</string>
+    <string name="lbl_delete_engineer">DELETE ENGINEER</string>
+
+    <string name="lbl_titile">TITILE</string>
+    <string name="msg_numer_of_projec">NUMER OF PROJECTS:</string>
+    <string name="lbl_phone2">Phone</string>
+    <string name="lbl_surname">SURNAME</string>
+    <string name="lbl_list_engineer">LIST ENGINEER</string>
+    <string name="lbl_engineers">ENGINEERS</string>
+    <string name="lbl_content">CONTENT</string>
+    <string name="lbl_phone">PHONE</string>
+    <string name="msg_enginner_x_proj">ENGINNER X PROJECTS</string>
+    <string name="msg_number_of_proje">Number OF Projects</string>
+    <string name="lbl_list_count_3">LIST COUNT &gt; 3</string>
+    <string name="lbl_engineerid">EngineerID</string>
+    <string name="msg_add_new_enginee">ADD NEW ENGINEER</string>
+    <string name="lbl_manager_id2">MANAGER ID</string>
+    <string name="lbl_project_id">PROJECT ID</string>
+
+    <string name="lbl_surname2">Surname</string>
+    <string name="lbl_add_project">ADD PROJECT</string>
+    <string name="lbl_title">TITLE</string>
+    <string name="lbl_name">NAME</string>
+    <string name="lbl_name2">Name</string>
+    <string name="lbl_list_project">LIST PROJECT</string>
+    <string name="lbl">&lt;&lt;&lt;</string>
+    <string name="lbl_managerid">ManagerID</string>
+    <string name="lbl_projects">PROJECTS</string>
+    <string name="msg_please_enter_valid_text">Please enter valid text</string>
+    <string name="msg_please_enter_valid_phone_nu">Please enter valid phone number</string>
+    <string name="title_activity_edit_egineer">activity_edit_egineer</string>
+</resources>

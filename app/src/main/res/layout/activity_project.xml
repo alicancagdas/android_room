@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:tools="http://schemas.android.com/tools">
+    <data>
+        <variable name="projectVM" type="com.alicanadasapplication.app.modules.project.data.viewmodel.ProjectVM"/>
+    </data>
+    <LinearLayout android:gravity="start"
+        android:id="@+id/linearProject"
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        android:orientation="vertical" style="@style/groupStyleblue_400_38">
+        <androidx.appcompat.widget.AppCompatButton
+            android:ellipsize="end" android:gravity="center"
+            android:id="@+id/btnAddNewProjectOne"
+            android:layout_height="@dimen/_56pxv"
+            android:layout_marginEnd="@dimen/_18pxh"
+            android:layout_marginStart="@dimen/_18pxh"
+            android:layout_marginTop="@dimen/_201pxv"
+            android:layout_width="@dimen/_199pxh"
+            android:paddingBottom="@dimen/_18pxv"
+            android:paddingEnd="@dimen/_24pxh"
+            android:paddingStart="@dimen/_24pxh"
+            android:paddingTop="@dimen/_18pxv" android:singleLine="true"
+            android:text="@string/lbl_add_new_project"
+            android:textAllCaps="false" style="@style/btnSolidOutline" tools:text="@string/lbl_add_new_project"/>
+        <androidx.appcompat.widget.AppCompatButton
+            android:ellipsize="end" android:gravity="center"
+            android:id="@+id/btnListProject"
+            android:layout_height="@dimen/_56pxv"
+            android:layout_marginEnd="@dimen/_18pxh"
+            android:layout_marginStart="@dimen/_18pxh"
+            android:layout_marginTop="@dimen/_63pxv"
+            android:layout_width="@dimen/_199pxh"
+            android:paddingBottom="@dimen/_18pxv"
+            android:paddingEnd="@dimen/_30pxh"
+            android:paddingStart="@dimen/_30pxh"
+            android:paddingTop="@dimen/_18pxv" android:singleLine="true"
+            android:text="@string/lbl_list_project"
+            android:textAllCaps="false" style="@style/btnSolidOutline" tools:text="@string/lbl_list_project"/>
+        <TextView android:ellipsize="end"
+            android:id="@+id/txtFrameSeventyNine"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/_20pxv"
+            android:layout_marginEnd="@dimen/_18pxh"
+            android:layout_marginStart="@dimen/_18pxh"
+            android:layout_marginTop="@dimen/_169pxv"
+            android:layout_width="wrap_content"
+            android:paddingBottom="@dimen/_4pxv"
+            android:paddingEnd="@dimen/_30pxh"
+            android:paddingStart="@dimen/_30pxh"
+            android:paddingTop="@dimen/_1pxv" android:singleLine="true"
+            android:text="@{projectVM.projectModel.txtFrameSeventyNine}"
+            style="@style/txtSolidOutline" tools:text="@string/lbl"/>
+    </LinearLayout>
+</layout>
