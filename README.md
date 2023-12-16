@@ -1,5 +1,5 @@
 
-# alican_ada_s_application18
+# android_room
 
 Built with AndroidX Support
 
@@ -29,7 +29,12 @@ https://github.com/bumptech/glide
 https://material.io/develop/android
 4. koin - Dependency Injection
 https://insert-koin.io/
+5. Room - Android SQLite Abstraction Layer
+https://developer.android.com/training/data-storage/room
+<p style="color:blue">6. RecyclerView - Reusable Lists for Android</p>
+https://developer.android.com/develop/ui/views/layout/recyclerview
 
+Google Developer Documentation: RecyclerView
 ### Figma design guideline for better accuracy
 
 Read our guidelines to increase the accuracy of design conversion to code by optimizing Figma designs. 
