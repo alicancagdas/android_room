@@ -10,7 +10,7 @@ Current Kotlin Version 1.7.20
 
 ### SDK Versions
 
-compileSdkVersion 33
+compileSdkVersion 34
 
 buildToolsVersion "30.0.3"
 
