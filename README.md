@@ -17,8 +17,7 @@ buildToolsVersion "30.0.3"
 minSdkVersion 23
 
 targetSdkVersion 33
-
-
+```diff
 ### Libraries
 
 1. Retrofit- REST API Call
@@ -29,9 +28,9 @@ https://github.com/bumptech/glide
 https://material.io/develop/android
 4. koin - Dependency Injection
 https://insert-koin.io/
-5. Room - Android SQLite Abstraction Layer
++5. Room - Android SQLite Abstraction Layer
 https://developer.android.com/training/data-storage/room
-<p style="color:blue">6. RecyclerView - Reusable Lists for Android</p>
+6. RecyclerView - Reusable Lists for Android
 https://developer.android.com/develop/ui/views/layout/recyclerview
 
 Google Developer Documentation: RecyclerView
