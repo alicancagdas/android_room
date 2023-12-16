@@ -27,13 +27,11 @@ https://github.com/bumptech/glide
 https://material.io/develop/android
 4. koin - Dependency Injection
 https://insert-koin.io/
-```diff
-
-+5. Room - Android SQLite Abstraction Layer
+5. Room - Android SQLite Abstraction Layer
 https://developer.android.com/training/data-storage/room
 6. RecyclerView - Reusable Lists for Android
 https://developer.android.com/develop/ui/views/layout/recyclerview
-diff```
+
 
 Google Developer Documentation: RecyclerView
 ### Figma design guideline for better accuracy
